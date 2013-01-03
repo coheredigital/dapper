@@ -1,0 +1,82 @@
+.nav-wrapper{
+	overflow: hidden;
+	width: 100%;
+}
+.nav-bar{
+	margin: 1em 0 0 0;
+	background: @grayLightest;
+}
+
+.nav-menu{
+	li{
+		display: inline-block;
+		color: lighten(@grayDark, 5%);
+	}
+	a{
+		// line-height: 2.7em;
+
+		color: @gray;
+
+		text-transform: uppercase;
+	}
+	a:hover{
+		color: @adminAccent;
+	}
+}
+.nav-main{
+	border-left: 1px solid @grayLighter;
+
+	li:first-child{
+		margin-left: -1px;
+	}
+	a{
+		line-height: 2.7em;
+		display: block;
+		color: darken(@grayLight, 1%);
+		padding: 0 1.4em;
+		text-transform: uppercase;
+	}
+	a:hover{
+		color: @gray;
+	}
+	.on{
+		background: #fff;
+		border-top: 3px solid @adminAccent;
+		margin-top: -3px;
+		.box-shadow( 0 0 5px rgba(0,0,0,.2));
+		color: @grayLight!important;
+	}
+}
+.nav-bread{
+	position: absolute;
+	top: 0;
+	li{
+		text-shadow: 0  0 3px #000;
+	}
+	a{
+		font-size: 0.9em;
+		font-weight: bold;
+		span{
+			font-size: 1.75em;
+			position: relative;
+			bottom: -0.05em;
+			margin: 0 0.5em 0 0;
+		}
+	}
+}
+.user-menu{
+	float: right;
+	margin: 1.1em 0;
+	li{
+		text-align: right;
+	}
+	a{
+		text-transform: uppercase;
+		color: @gray;
+		font-weight: bold;
+		font-size: 0.9em;
+	}
+	a:hover{
+		color: @adminAccent;
+	}
+}

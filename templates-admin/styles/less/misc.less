@@ -1,0 +1,100 @@
+h1,
+.user-menu a{
+	text-shadow: 0  0 3px #000;
+}
+
+.search-box{
+	float: right;
+}
+#ProcessPageSearchQuery{
+	padding: 0.7em 1em;
+	border: none;
+	border-left: 1px solid @grayLighter;
+	border-right: 1px solid @grayLighter;
+	margin: 1px 0 -5px 0;
+	background: transparent;
+	outline: none;
+	text-align: right;
+	line-height: 1em;
+	width: 200px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#ProcessPageSearchQuery:focus{
+	border-color: #fff;
+	background: #fff;
+	
+	.box-shadow( 0 0 5px rgba(0,0,0,.2));
+}
+
+
+.ui-button{
+	padding: 0.5em 0.8em;
+	text-transform: uppercase;
+	background: white;
+	.box-shadow( 0 0 5px rgba(0,0,0,.2));
+	border: none!important;
+	border-top: 2px solid @adminAccent!important;
+}
+.ui-button.ui-state-default{
+	background: @grayDark;
+	color: #fff;
+}
+.ui-button.ui-state-hover{
+	background: @gray;
+	color: #fff;
+}
+.ui-button.ui-state-active{
+	background: @grayDark!important;
+	color: #fff;
+	border-color: @success!important;
+}
+
+// delete colors
+#_WireTabDelete{
+	color: @error;
+}
+#_WireTabDelete.on{
+	border-color: @error!important;
+}
+#_WireTabDelete:hover{
+	color: @errorDark;
+}
+
+
+.align_left {
+	float: left;
+	margin: 0 1em 0.5em 0;
+}
+
+.align_right {
+	float: right;
+	margin: 0 0 0.5em 1em; 
+}
+
+.align_center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+
+body.modal{
+	.footer,
+	.page-header{
+		display: none!important;
+	}
+}
+
+// ---------------------------------------------------------------------------------
+// overrides ---------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+
+table.AdminDataList tr td:first-child a{
+	font-weight: 100!important;
+	color: @adminAccentDark;
+}
+
+table.AdminDataList td span.ui-icon{
+	bottom: auto!important;
+}
